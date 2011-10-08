@@ -72,5 +72,5 @@ PROMPT_COMMAND='history -a'
 export HISTSIZE=100000
 
 
-PS1="$BLUE\nracx:$GREEN\w $RED(\$(__gemset)) $VIOLET\$(__git_branch) ${NORMAL}\$ \n ${RESET}"
+PS1="$BLUE\nracx:$GREEN\w $RED(\$(__gemset)) $VIOLET\$(__git_branch) ${NORMAL}\$ \n>> ${RESET}"
 
