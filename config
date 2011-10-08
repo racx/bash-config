@@ -61,16 +61,6 @@ __git_branch() {
 }
 
 
-####### history file
-# don't put duplicate lines in the history. See bash(1) for more options
-# don't overwrite GNU Midnight Commander's setting of `ignorespace'.
-export HISTCONTROL=$HISTCONTROL${HISTCONTROL+,}ignoredups
-export HISTCONTROL=ignoreboth
-# append to the history file, don't overwrite it
-shopt -s histappend
-PROMPT_COMMAND='history -a'
-export HISTSIZE=100000
 
-
-PS1="$BLUE\nracx:$GREEN\w $RED(\$(__gemset)) $VIOLET\$(__git_branch) ${NORMAL}\$ \n>> ${RESET}"
+PS1="$RED\nracx:$GREEN\w $RED(\$(__gemset)) $VIOLET\$(__git_branch) ${NORMAL}\$ >> ${RESET}"
 
